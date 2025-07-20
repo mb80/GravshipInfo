@@ -1,0 +1,31 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{aea3c926-6a68-40a8-8bfc-b610dab9ac08}") = "GravshipInfo", "Source\GravshipInfo.csproj", "{35b28460-fbc9-4ae0-b397-036eb54ea089}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|Any CPU = Release|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35b28460-fbc9-4ae0-b397-036eb54ea089}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35b28460-fbc9-4ae0-b397-036eb54ea089}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35b28460-fbc9-4ae0-b397-036eb54ea089}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35b28460-fbc9-4ae0-b397-036eb54ea089}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {aea3c926-6a68-40a8-8bfc-b610dab9ac08}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = None
+		$1.ResourceNamePolicy = FileFormatDefault
+		version = 1.0
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <Gravship>Gravship</Gravship>
+    <GravshipInfoLabel>Gravship Info</GravshipInfoLabel>
+    <GravshipDisabled>Gravship Info is disabled.</GravshipDisabled>
+    <GravshipReadyLabel>Gravship ready!</GravshipReadyLabel>
+    <NoGravshipLabel>No Gravship</NoGravshipLabel>
+    <NoGravEngineFound>No grav engine has been found on this map.</NoGravEngineFound>
+    <ReadyToLaunch>Grav engine is ready to launch!</ReadyToLaunch>
+    <DetectedProblems>Detected Problems:</DetectedProblems>
+    <EngineNotInstalled>- Engine is not installed</EngineNotInstalled>
+    <ThrustersBlocked>- Thruster is blocked</ThrustersBlocked>
+    <SubstructureTooLarge>- Substructure is too large ( {0} / {1} )</SubstructureTooLarge>
+    <MissingComponents>- Missing component(s), check above</MissingComponents>
+    <NotEnoughFuel>- Not enough fuel</NotEnoughFuel>
+    <ShowInfoAlertLabel>Show Gravship Launch Info:</ShowInfoAlertLabel>
+    <ShowInfoAlertOnAlways>Always</ShowInfoAlertOnAlways>
+    <ShowInfoAlertOnShipFound>When a grav engine is available</ShowInfoAlertOnShipFound>
+    <ShowInfoAlertDisabled>Never</ShowInfoAlertDisabled>
+    <MissingSettingsInfoText>Are you missing a setting or feature? Feel free to report this on the steam workshop page!</MissingSettingsInfoText>
+</LanguageData>

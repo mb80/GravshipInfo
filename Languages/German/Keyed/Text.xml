@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <Gravship>Gravschiff</Gravship>
+    <GravshipInfoLabel>Gravschiff Info</GravshipInfoLabel>
+    <GravshipDisabled>Gravschiff Info ist deaktiviert.</GravshipDisabled>
+    <GravshipReadyLabel>Gravschiff bereit!</GravshipReadyLabel>
+    <NoGravshipLabel>Kein Gravschiff</NoGravshipLabel>
+    <NoGravEngineFound>Es wurde kein Gravtriebwerk auf der aktuellen Karte gefunden.</NoGravEngineFound>
+    <ReadyToLaunch>Gravtriebwerk ist bereit zu starten!</ReadyToLaunch>
+    <DetectedProblems>Festgestellte Probleme:</DetectedProblems>
+    <EngineNotInstalled>- Gravtriebwerk ist nicht montiert</EngineNotInstalled>
+    <ThrustersBlocked>- Schubdüse ist blockiert</ThrustersBlocked>
+    <SubstructureTooLarge>- Zu viele Unterbauten ( {0} / {1} )</SubstructureTooLarge>
+    <MissingComponents>- Fehlende Schiffsteile, siehe oben</MissingComponents>
+    <NotEnoughFuel>- Nicht genügend Treibstoff</NotEnoughFuel>
+    <ShowInfoAlertLabel>Anzeige der Gravschiffstart Info:</ShowInfoAlertLabel>
+    <ShowInfoAlertOnAlways>Immer</ShowInfoAlertOnAlways>
+    <ShowInfoAlertOnShipFound>Wenn ein Gravtriebwerk verfügbar ist</ShowInfoAlertOnShipFound>
+    <ShowInfoAlertDisabled>Niemals</ShowInfoAlertDisabled>
+    <MissingSettingsInfoText>Vermisste eine Einstellung oder Funktion? Melde dies gern auf der Steam Workshopseite!</MissingSettingsInfoText>
+</LanguageData>
