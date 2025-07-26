@@ -32,20 +32,4 @@
 
         You can find the non-steam version and source code here:[url=https://github.com/mb80/GravshipInfo/releases/latest] GitHub link [/url]
     </description>
-  <description_de>[h1] Gravship Launch Info[/h1]
-        [b]Eine Infoanzeige für den Start deines Gravschiffs, welche alle wichtigen Informationen dazu einfach
-        anzeigt:[/b]
-        [list]
-        [*] Zeit bis zum nächstmöglichen Start
-        [*] Aktuelle Gravschiff-Parameter
-        [*] Fehlender Gravschiff-Komponenten
-        [*] Zu viele verbundene Unterbauten
-        [*] Fehlender Treibstoff
-        [*] Nicht montiertes Gravtriebwerk
-        [/list]
-
-        Fehlen dir Einstellungen, Funktionen oder Übersetzungen? Bekommst du Fehler mit diesem Mod? Berichte gern hier oder auf GitHub!
-
-        Die Nicht-Steam-Version und Quellcode zu diesem Mod findest du hier: [url=https://github.com/mb80/GravshipInfo/releases/latest] GitHub Link [/url]
-    </description_de>
 </ModMetaData>
