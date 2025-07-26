@@ -17,5 +17,5 @@
     <ShowInfoAlertOnAlways>Always</ShowInfoAlertOnAlways>
     <ShowInfoAlertOnShipFound>When a grav engine is available</ShowInfoAlertOnShipFound>
     <ShowInfoAlertDisabled>Never</ShowInfoAlertDisabled>
-    <MissingSettingsInfoText>Are you missing a setting or feature? Feel free to report this on the steam workshop page!</MissingSettingsInfoText>
+    <MissingSettingsInfoText>Are you missing a setting or feature? Are you experiencing errors? Feel free to report this on the steam workshop page!</MissingSettingsInfoText>
 </LanguageData>
