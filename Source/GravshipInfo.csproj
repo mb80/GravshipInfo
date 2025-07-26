@@ -69,7 +69,7 @@
 <!--			<Private>true</Private>-->
 <!--		</Reference>-->
 
-		<PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.4523" GeneratePathProperty="true" />
+		<PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.4532-beta" GeneratePathProperty="true" />
 		
 		<PackageReference Include="Lib.Harmony" Version="2.3.6" ExcludeAssets="runtime" />
 		<PackageReference Include="Microsoft.NETCore.Platforms" Version="7.0.4" />

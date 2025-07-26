@@ -6,8 +6,6 @@ using Verse;
 
 namespace GravshipInfo
 {
-
-
 	public class Alert_GravshipInfo : Alert
 	{
 		public GravshipInfoMod Info;
@@ -109,6 +107,10 @@ namespace GravshipInfo
 
 			stringBuilder.AppendInNewLine(gravEngine.GetInspectString());
 
+
+			stringBuilder.AppendInNewLine((string)"GravshipRange".Translate().CapitalizeFirst()).Append(": ")
+				.Append(Info.GetMaxLaunchDistance(Info.Map.Tile.Layer).ToString("F0"));
+
 			stringBuilder.AppendInNewLine((string)"StoredChemfuel".Translate().CapitalizeFirst()).Append(": ")
 				.Append(gravEngine.TotalFuel.ToString("F0")).Append(" / ").Append(gravEngine.MaxFuel.ToString("F0"));
 			stringBuilder.AppendInNewLine((string)"FuelConsumption".Translate().CapitalizeFirst()).Append(": ").Append(
@@ -144,7 +146,8 @@ namespace GravshipInfo
 				{
 					stringBuilder.AppendInNewLine(
 						"SubstructureTooLarge".Translate((NamedArgument)gravEngine.AllConnectedSubstructure.Count,
-							(NamedArgument)gravEngine.GetStatValue(StatDefOf.SubstructureSupport)).Colorize(ColorLibrary.RedReadable));
+								(NamedArgument)gravEngine.GetStatValue(StatDefOf.SubstructureSupport))
+							.Colorize(ColorLibrary.RedReadable));
 				}
 
 				if (Info.HasMissingComponents && !Info.EngineIsUninstalled)
@@ -157,6 +160,7 @@ namespace GravshipInfo
 					stringBuilder.AppendInNewLine("NotEnoughFuel".Translate().Colorize(ColorLibrary.RedReadable));
 				}
 			}
+
 			return stringBuilder.ToString();
 		}
 	}

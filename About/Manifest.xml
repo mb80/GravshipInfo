@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest>
   <identifier>epicduck.gravshipinfo</identifier>
-  <version>0.5.0.0</version>
+  <version>0.5.1.0</version>
   <targetVersions>
     <li>1.6.0</li>
   </targetVersions>

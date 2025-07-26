@@ -3,6 +3,7 @@ using System.IO;
 using System.Reflection;
 using HarmonyLib;
 using RimWorld;
+using RimWorld.Planet;
 using UnityEngine;
 using Verse;
 
@@ -51,6 +52,8 @@ namespace GravshipInfo
 		public bool NotEnoughFuel { get; set; } = false;
 
 		public Building_GravEngine GravEngine { get; set; } = null;
+
+		public Map Map { get; set; } = null;
 
 		public LaunchStatus LaunchStatus
 		{
@@ -121,14 +124,15 @@ namespace GravshipInfo
 			EngineIsUninstalled = false;
 			NotEnoughFuel = false;
 
-			Map map = Find.CurrentMap;
-			if (map == null)
+			Map = Find.CurrentMap;
+			if (Map == null)
 			{
 				LaunchStatus = LaunchStatus.Disabled;
 				return;
 			}
 
-			var ship = GravshipUtility.GetPlayerGravEngine(map);
+
+			var ship = GravshipUtility.GetPlayerGravEngine(Map);
 			if (ship == null)
 			{
 				LaunchStatus = LaunchStatus.NotFound;
@@ -197,8 +201,15 @@ namespace GravshipInfo
 			LaunchStatus = LaunchStatus.Disabled;
 		}
 
-
 		public override void DoSettingsWindowContents(Rect inRect) => Settings.DoWindowContents(inRect);
 		public override string SettingsCategory() => "Gravship Info";
+
+		public int GetMaxLaunchDistance(PlanetLayer layer)
+		{
+			int? maxLaunchDistance = this.GravEngine?.MaxLaunchDistance;
+			float? nullable = maxLaunchDistance.HasValue ? new float?((float) maxLaunchDistance.GetValueOrDefault()) : new float?();
+			float rangeDistanceFactor = layer.Def.rangeDistanceFactor;
+			return Mathf.FloorToInt((nullable.HasValue ? new float?(nullable.GetValueOrDefault() / rangeDistanceFactor) : new float?()).GetValueOrDefault());
+		}
 	}
 }

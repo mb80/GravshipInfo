@@ -3,7 +3,7 @@
   <name>Gravship Launch Info</name>
   <author>EpicDuck</author>
   <packageId>epicduck.rimworld.gravshipinfo</packageId>
-  <modVersion>0.5.0.0</modVersion>
+  <modVersion>0.5.1.0</modVersion>
   <steamAppId>3530404957</steamAppId>
   <supportedVersions>
     <li>1.6</li>
@@ -17,15 +17,35 @@
     </li>
   </modDependencies>
   <url>https://github.com/mb80/GravshipInfo</url>
-  <description>An info display for your gravship showing launch important information at a glance:
-[list]
-[*] time until next launch
-[*] missing ship components
-[*] connected substructure exceeds limit
-[*] missing fuel
-[*] not installed engine
-[/list]
+  <description>[h1] Gravship Launch Info[/h1]
+        [b]An info display for your gravship showing launch important information at a glance:[/b]
+        [list]
+        [*] time until next launch
+        [*] current gravship capabilities
+        [*] missing ship components
+        [*] connected substructure exceeds limit
+        [*] missing fuel
+        [*] not installed engine
+        [/list]
 
-Are you missing a setting or feature? Are you experiencing errors? Feel free to report this here!
+        Are you missing a setting, feature, translation? Are you experiencing errors? Feel free to report this here or on GitHub!
+
+        You can find the non-steam version and source code here:[url=https://github.com/mb80/GravshipInfo/releases/latest] GitHub link [/url]
     </description>
+  <description_de>[h1] Gravship Launch Info[/h1]
+        [b]Eine Infoanzeige für den Start deines Gravschiffs, welche alle wichtigen Informationen dazu einfach
+        anzeigt:[/b]
+        [list]
+        [*] Zeit bis zum nächstmöglichen Start
+        [*] Aktuelle Gravschiff-Parameter
+        [*] Fehlender Gravschiff-Komponenten
+        [*] Zu viele verbundene Unterbauten
+        [*] Fehlender Treibstoff
+        [*] Nicht montiertes Gravtriebwerk
+        [/list]
+
+        Fehlen dir Einstellungen, Funktionen oder Übersetzungen? Bekommst du Fehler mit diesem Mod? Berichte gern hier oder auf GitHub!
+
+        Die Nicht-Steam-Version und Quellcode zu diesem Mod findest du hier: [url=https://github.com/mb80/GravshipInfo/releases/latest] GitHub Link [/url]
+    </description_de>
 </ModMetaData>
