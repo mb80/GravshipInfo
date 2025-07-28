@@ -7,12 +7,29 @@ namespace GravshipInfo
 {
 	public class GravshipInfoSettings : ModSettings
 	{
+		public static int ModSettingsVersion = 1; //current min settings version
+		public int SettingsVersion = 0;
 
 		public AlertDisplayMode ShowInfoAlert = AlertDisplayMode.Always;
+
+		public AlertColorMode AlertColors = AlertColorMode.Default;
+
 		public override void ExposeData()
 		{
 			base.ExposeData();
-			Scribe_Values.Look(ref ShowInfoAlert, "ShowInfoAlert", AlertDisplayMode.Always);
+			Scribe_Values.Look(ref SettingsVersion, "SettingsVersion", 0);
+			Scribe_Values.Look(ref ShowInfoAlert, "ShowInfoAlert", AlertDisplayMode.OnShipFound);
+
+			if (Scribe.mode == LoadSaveMode.LoadingVars && SettingsVersion < ModSettingsVersion)
+			{
+				//OnShipFound is new default since v0.5.2.0
+				if (ShowInfoAlert == AlertDisplayMode.Always)
+				{
+					ShowInfoAlert = AlertDisplayMode.OnShipFound;
+				}
+				SettingsVersion = ModSettingsVersion;
+			}
+
 
 		}
 
@@ -24,25 +41,37 @@ namespace GravshipInfo
 			var listing = new Listing_Standard { ColumnWidth = (inRect.width - 34f) / 2f };
 
 			listing.Begin(inRect);
+
 			listing.Gap();
-			listing.Label("ShowInfoAlertLabel".Translate());
+			listing.Label($"<b>{"ShowInfoAlertLabel".Translate()}</b>");
 			// Radio button for Always
-			if (listing.RadioButton("Always", ShowInfoAlert == AlertDisplayMode.Always))
+			if (listing.RadioButton("ShowInfoAlertAlways".Translate(), ShowInfoAlert == AlertDisplayMode.Always))
 			{
 				ShowInfoAlert = AlertDisplayMode.Always;
 			}
-
 			// Radio button for OnShipFound
-			if (listing.RadioButton("When a gravengine is available", ShowInfoAlert == AlertDisplayMode.OnShipFound))
+			if (listing.RadioButton("ShowInfoAlertOnShipFound".Translate(), ShowInfoAlert == AlertDisplayMode.OnShipFound))
 			{
 				ShowInfoAlert = AlertDisplayMode.OnShipFound;
 			}
-
 			// Radio button for Disabled
-			if (listing.RadioButton("Disabled", ShowInfoAlert == AlertDisplayMode.Disabled))
+			if (listing.RadioButton("ShowInfoAlertDisabled".Translate(), ShowInfoAlert == AlertDisplayMode.Disabled))
 			{
 				ShowInfoAlert = AlertDisplayMode.Disabled;
 			}
+			listing.Gap();
+			listing.Label($"<b>{"AlertColorsLabel".Translate()}</b>");
+			// Radio button for Colored (Default)
+			if (listing.RadioButton("AlertColorsEnabled".Translate(), AlertColors == AlertColorMode.Default))
+			{
+				AlertColors = AlertColorMode.Default;
+			}
+			// Radio button for No Colors
+			if (listing.RadioButton("AlertColorsDisabled".Translate(), AlertColors == AlertColorMode.None))
+			{
+				AlertColors = AlertColorMode.None;
+			}
+			listing.Gap();
 
 			listing.Gap();
 			listing.Gap();

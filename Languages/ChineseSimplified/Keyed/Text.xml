@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <Gravship>逆重飞船</Gravship>
+    <GravshipInfoLabel>飞船发射状态</GravshipInfoLabel>
+    <GravshipDisabled>逆重飞船功能未启用</GravshipDisabled>
+    <GravshipReadyLabel>逆重飞船就绪！</GravshipReadyLabel>
+    <NoGravshipLabel>无逆重飞船</NoGravshipLabel>
+    <NoGravEngineFound>当前地图未找到逆重引擎</NoGravEngineFound>
+    <ReadyToLaunch>逆重引擎可发射！</ReadyToLaunch>
+    <DetectedProblems>问题检测：</DetectedProblems>
+    <EngineNotInstalled>- 引擎未安装</EngineNotInstalled>
+    <ThrustersBlocked>- 推进器被阻挡</ThrustersBlocked>
+    <SubstructureTooLarge>- 子结构过大 ( {0} / {1} )</SubstructureTooLarge>
+    <MissingComponents>- 组件缺失（请检查上方列表）</MissingComponents>
+    <NotEnoughFuel>- 燃料不足</NotEnoughFuel>
+    <ShowInfoAlertLabel>逆重飞船发射状态显示：</ShowInfoAlertLabel>
+    <ShowInfoAlertAlways>始终显示</ShowInfoAlertAlways>
+    <ShowInfoAlertOnShipFound>有可用的逆重引擎时显示</ShowInfoAlertOnShipFound>
+    <ShowInfoAlertDisabled>从不显示</ShowInfoAlertDisabled>
+<!--    <AlertColorsLabel>Display Alert with Colors:</AlertColorsLabel>-->
+<!--    <AlertColorsEnabled>Enabled</AlertColorsEnabled>-->
+<!--    <AlertColorsDisabled>Disabled</AlertColorsDisabled>-->
+    <MissingSettingsInfoText>缺少功能或设置？欢迎在Steam工坊页面反馈！</MissingSettingsInfoText>
+</LanguageData>

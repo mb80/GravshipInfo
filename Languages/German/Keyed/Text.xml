@@ -14,8 +14,11 @@
     <MissingComponents>- Fehlende Schiffsteile, siehe oben</MissingComponents>
     <NotEnoughFuel>- Nicht genügend Treibstoff</NotEnoughFuel>
     <ShowInfoAlertLabel>Anzeige der Gravschiffstart Info:</ShowInfoAlertLabel>
-    <ShowInfoAlertOnAlways>Immer</ShowInfoAlertOnAlways>
+    <ShowInfoAlertAlways>Immer</ShowInfoAlertAlways>
     <ShowInfoAlertOnShipFound>Wenn ein Gravtriebwerk verfügbar ist</ShowInfoAlertOnShipFound>
     <ShowInfoAlertDisabled>Niemals</ShowInfoAlertDisabled>
+    <AlertColorsLabel>Anzeige mit Farben:</AlertColorsLabel>
+    <AlertColorsEnabled>Aktiv</AlertColorsEnabled>
+    <AlertColorsDisabled>Deaktiviert</AlertColorsDisabled>
     <MissingSettingsInfoText>Vermisst du eine Einstellung oder Funktion? Oder du Fehler mit diesem Mod? Melde dies gern auf der Steam Workshopseite!</MissingSettingsInfoText>
 </LanguageData>

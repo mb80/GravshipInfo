@@ -14,8 +14,11 @@
     <MissingComponents>- Missing component(s), check above</MissingComponents>
     <NotEnoughFuel>- Not enough fuel</NotEnoughFuel>
     <ShowInfoAlertLabel>Show Gravship Launch Info:</ShowInfoAlertLabel>
-    <ShowInfoAlertOnAlways>Always</ShowInfoAlertOnAlways>
+    <ShowInfoAlertAlways>Always</ShowInfoAlertAlways>
     <ShowInfoAlertOnShipFound>When a grav engine is available</ShowInfoAlertOnShipFound>
     <ShowInfoAlertDisabled>Never</ShowInfoAlertDisabled>
+    <AlertColorsLabel>Display Alert with Colors:</AlertColorsLabel>
+    <AlertColorsEnabled>Enabled</AlertColorsEnabled>
+    <AlertColorsDisabled>Disabled</AlertColorsDisabled>
     <MissingSettingsInfoText>Are you missing a setting or feature? Are you experiencing errors? Feel free to report this on the steam workshop page!</MissingSettingsInfoText>
 </LanguageData>

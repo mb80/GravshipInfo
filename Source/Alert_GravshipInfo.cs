@@ -14,16 +14,19 @@ namespace GravshipInfo
 		public Alert_GravshipInfo()
 		{
 			Info = GravshipInfoMod.Instance;
-			this.defaultLabel = "Gravship Info".Translate();
+			this.defaultLabel = "GravshipInfoLabel".Translate();
 			this.defaultPriority = AlertPriority.Medium;
 		}
 
 		//TODO change to: public if using Krafs.Rimworld.Ref, protected of using rimworld game assemblies
-		public override Color BGColor => BgColor();
+		protected override Color BGColor => BgColor();
 
 
 		public Color BgColor()
 		{
+			if (Info.AlertColors == AlertColorMode.None)
+				return Color.clear;
+
 			Color color = Color.gray;
 			switch (Info.LaunchStatus)
 			{

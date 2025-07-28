@@ -3,7 +3,7 @@
 		<ModName>Gravship Launch Info</ModName>
 		<ModFileName>GravshipInfo</ModFileName>
 		<Repository>https://github.com/mb80/GravshipInfo</Repository>
-		<ModVersion>0.5.1.0</ModVersion>
+		<ModVersion>0.5.2.0</ModVersion>
 		<ProjectGuid>35b28460-fbc9-4ae0-b397-036eb54ea089</ProjectGuid>
 		<LocalRimWorldPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld</LocalRimWorldPath>
 		<RIMWORLD_MOD_DIR>C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods</RIMWORLD_MOD_DIR>

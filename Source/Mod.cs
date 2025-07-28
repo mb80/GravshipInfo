@@ -26,6 +26,13 @@ namespace GravshipInfo
 		Disabled
 	}
 
+	public enum AlertColorMode : byte
+	{
+		Default,
+		None,
+		// CustomColors
+	}
+
 	public class GravshipInfoMod : Mod
 	{
 		private static bool devLogEnabled = false;
@@ -34,6 +41,11 @@ namespace GravshipInfo
 
 
 		public static GravshipInfoSettings Settings;
+
+		public AlertColorMode AlertColors
+		{
+			get => Settings?.AlertColors ?? AlertColorMode.Default;
+		}
 
 		internal static GravshipInfoMod Instance { get; private set; }
 
@@ -202,7 +214,7 @@ namespace GravshipInfo
 		}
 
 		public override void DoSettingsWindowContents(Rect inRect) => Settings.DoWindowContents(inRect);
-		public override string SettingsCategory() => "Gravship Info";
+		public override string SettingsCategory() => "GravshipInfoLabel".Translate();
 
 		public int GetMaxLaunchDistance(PlanetLayer layer)
 		{
